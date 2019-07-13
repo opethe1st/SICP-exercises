@@ -1,0 +1,16 @@
+(define (assert expected given)
+    (if (eq? given expected)
+        (begin
+            (display pass)
+            (newline)
+        )
+        (begin
+            (display "ASSERTION FAILURE: ")
+            (display "was given ")
+            (display given)
+            (display " but expected ")
+            (display expected)
+            (newline)
+        )
+    )
+)
